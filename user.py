@@ -1,6 +1,25 @@
 import sqlite3
 import csv
 
+# git -- global user.name "Sahil Koirala"
+# git --global user.email "koirala24sahil@gmail.com"
+
+# Create account in github
+# git init
+# git add .
+# git commit -m"Your commit message"
+
+# copy paste from gihub repository
+# git remote add origin https://github.com/Runner-attacker/python_basic_project
+# git push -u origin main
+
+### after changing any file
+# git status # check what happened in the file
+# git diff
+# git add .
+# git commit -m "Your commit message"
+# git push origin
+
 def create_connection():
     try:
         con =  sqlite3.connect("users.sqlite3")
