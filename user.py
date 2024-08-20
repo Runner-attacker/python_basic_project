@@ -41,6 +41,20 @@ INPUT_STRING = """
     9. UPDATE user
     10. PRESS any key to EXIT
 """
+COLUMNS = (
+            "first_name",
+            "last_name",
+            "company_name",
+            "address",
+            "city",
+            "county",
+            "state",
+            "zip",
+            "phone1",
+            "phone2",
+            "email",
+            "web"
+)
 
 def create_table(conn):
     CREATE_USERS_TABLE_QUERY = """
@@ -73,20 +87,7 @@ def read_csv():
             users.append(tuple(user))
         return users[1:]
     
-COLUMNS = (
-            "first_name",
-            "last_name",
-            "company_name",
-            "address",
-            "city",
-            "county",
-            "state",
-            "zip",
-            "phone1",
-            "phone2",
-            "email",
-            "web"
-)
+
     
 def insert_users(con,users):
     user_add_query = """
